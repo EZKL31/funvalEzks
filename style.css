@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    font-family: epilogue;
+}
+html{ 
+    margin: 0px;
+}
+body{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(0, 0%, 98%);
+}
+@font-face{
+    font-family:Epilogue-titulo;
+src: url(Epilogue-VariableFont_wght.ttf);
+font-weight: 700;
+}
+@font-face{
+    font-family:Epilogue;
+src: url(Epilogue-VariableFont_wght.ttf);
+font-weight: 500;
+}
+
+
+.nav{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin-left: 10px;
+}
+.navegacion{
+    display: flex;
+}
+
+#logo{
+    max-height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.botones{
+    min-width: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+   display: flex; 
+}
+
+.boton:hover{
+ border: 1px solid #000;   
+}
+
+.boton{
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #FFF;
+    min-width: 60px;
+    
+}
+.dropdown{
+    position: absolute;
+    display: none;
+    background-color: hsl(0, 0%, 100%);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px rgba(184,184,184,1);
+    
+}
+.dropdown > li{
+    margin-top: 10px ;
+    list-style: none;
+
+}
+li:hover{
+    color: hsl(0, 0%, 8%);
+}
+li, p{
+    color: hsl(0, 0%, 69%);
+   
+}
+
+li:hover .dropdown{
+    display: block;
+    
+} 
+#contenedor{
+   margin-left: auto;
+   margin-right: auto;
+   padding-bottom: 100px;
+   margin-top: 60px;
+}
+aside{
+    float: right;
+    width: 40%;
+    display: block;
+}
+
+#asideimg{
+    display: block;
+    max-height: 550px;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main{
+    width: 60%;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+
+article{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div{
+    overflow: visible;
+}
+h1{
+  font-size: 80px;
+ font-family: Epilogue-titulo;
+}
+p{
+   
+    margin-bottom: 80px;
+    font-size:18px;
+    width: 70%;
+}
+#clientes{
+    display:flex;
+   margin-top: 80px;
+   justify-content: space-between;
+   width: 80%;
+}
+
+#clientes > img{
+    height: fit-content;
+}
+#clientes > img:hover{
+   transform: scale(1.5);
+   transition-timing-function: ease-in-out;
+   transition: 0.4s;
+   animation-delay: 1s;
+   
+}
+
+
+
+
+nav{
+    display: flex;
+   justify-content: space-between;
+   margin-left: auto;
+   margin-right: auto;
+   width: 90%;
+   margin-bottom: 20px;
+}
+
+#aprende:hover{
+    background-color: white;
+    color: black;
+   
+}
+#aprende{
+   
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 8%);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+   
+}
+
+li > span::after{
+    content: url(img/icon-arrow-down.svg);
+    margin-left: 4px;
+}
+
+li:hover span::after{
+    content: url(img/icon-arrow-up.svg);
+    margin-left: 4px;
+}
+
+
+.custom-bullet > #recordatorio::before{
+    content: url(img/icon-reminders.svg) ;
+    margin-right: 6px;
+}
+
+.custom-bullet > #calendario::before{
+    content: url(img/icon-calendar.svg) ;
+    margin-right: 6px;
+}
+.custom-bullet > #planeamiento::before{
+    content: url(img/icon-planning.svg) ;
+    margin-right: 6px;
+}.custom-bullet > #lista::before{
+    content: url(img/icon-todo.svg) ;
+    margin-right: 6px;
+}
+
+#tres:hover{
+    color: hsl(243, 38%, 46%);
+}
+#dos:hover{
+    color:hsl(52, 74%, 52%);
+}
+#uno:hover{
+    color: hsl(277, 42%, 51%);
+}
